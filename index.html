@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❄️ 给思彤的温暖祝福 ✨</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Serif SC', 'Microsoft YaHei', serif;
+            overflow-x: hidden;
+            background: #1a2332;
+            color: #fff;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">❄️</text></svg>'), auto;
+        }
+
+        /* Siberian Winter Background */
+        .winter-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background:
+                linear-gradient(to bottom,
+                    rgba(26, 35, 50, 0.7) 0%,
+                    rgba(52, 73, 94, 0.6) 50%,
+                    rgba(142, 158, 171, 0.5) 100%),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23b8d4e8;stop-opacity:1" /><stop offset="100%" style="stop-color:%23e8f4f8;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23sky)" width="1200" height="800"/><path fill="%23ffffff" d="M0,400 Q300,350 600,400 T1200,400 L1200,800 L0,800 Z"/><ellipse cx="200" cy="450" rx="80" ry="60" fill="%23f0f8ff" opacity="0.6"/><ellipse cx="500" cy="480" rx="100" ry="70" fill="%23f0f8ff" opacity="0.7"/><ellipse cx="900" cy="460" rx="90" ry="65" fill="%23f0f8ff" opacity="0.6"/><path fill="%23e0f0ff" d="M100,500 L150,450 L120,450 L160,400 L130,400 L180,340 L140,340 L190,280 L150,340 L170,340 L130,390 L160,390 L120,440 L150,440 Z"/><path fill="%23e0f0ff" d="M800,520 L850,470 L820,470 L860,420 L830,420 L880,360 L840,360 L890,300 L850,360 L870,360 L830,410 L860,410 L820,460 L850,460 Z"/><circle cx="150" cy="200" r="40" fill="%23ffffff" opacity="0.3"/><circle cx="180" cy="210" r="35" fill="%23ffffff" opacity="0.25"/><circle cx="900" cy="250" r="45" fill="%23ffffff" opacity="0.3"/><circle cx="930" cy="265" r="38" fill="%23ffffff" opacity="0.25"/></svg>');
+            background-size: cover;
+            background-position: center;
+            animation: breathe 20s ease-in-out infinite;
+        }
+
+        @keyframes breathe {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Frosted glass overlay */
+        .frost-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background:
+                radial-gradient(ellipse at top, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom left, rgba(173, 216, 230, 0.1) 0%, transparent 40%),
+                radial-gradient(ellipse at bottom right, rgba(176, 224, 230, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        /* Snow canvas */
+        #snowCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        /* Fireworks canvas */
+        #fireworksCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        /* Northern lights effect */
+        .northern-lights {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            z-index: 1;
+            background:
+                radial-gradient(ellipse at 30% 20%, rgba(0, 255, 170, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 30%, rgba(135, 206, 250, 0.1) 0%, transparent 50%);
+            animation: aurora 15s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes aurora {
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: translateY(0);
+            }
+
+            50% {
+                opacity: 0.6;
+                transform: translateY(-20px);
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 4;
+            padding: 40px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: 6rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow:
+                0 0 30px rgba(255, 255, 255, 0.9),
+                0 0 60px rgba(135, 206, 250, 0.7),
+                0 0 90px rgba(173, 216, 230, 0.5),
+                0 5px 20px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+            animation: glow 3s ease-in-out infinite alternate, float 4s ease-in-out infinite;
+            letter-spacing: 12px;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow:
+                    0 0 30px rgba(255, 255, 255, 0.9),
+                    0 0 60px rgba(135, 206, 250, 0.7),
+                    0 0 90px rgba(173, 216, 230, 0.5),
+                    0 5px 20px rgba(0, 0, 0, 0.4);
+            }
+
+            to {
+                text-shadow:
+                    0 0 40px rgba(255, 255, 255, 1),
+                    0 0 80px rgba(135, 206, 250, 0.9),
+                    0 0 120px rgba(173, 216, 230, 0.8),
+                    0 0 150px rgba(176, 224, 230, 0.6),
+                    0 5px 25px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 2.3rem;
+            color: #e8f4f8;
+            margin-bottom: 50px;
+            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            animation: fadeInUp 1.8s ease 0.3s backwards;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Blessing Cards Section */
+        .blessing-section {
+            margin: 80px 0;
+            animation: fadeInUp 1.8s ease 0.5s backwards;
+        }
+
+        .blessing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            perspective: 1000px;
+        }
+
+        .blessing-card {
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.12) 0%,
+                    rgba(255, 255, 255, 0.06) 100%);
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 45px 35px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                0 10px 40px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+
+        /* Snowflake decorations on cards */
+        .blessing-card::before {
+            content: '❄';
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.15);
+            animation: cardSnowRotate 20s linear infinite;
+        }
+
+        .blessing-card::after {
+            content: '❅';
+            position: absolute;
+            bottom: 20px;
+            left: 25px;
+            font-size: 2.5rem;
+            color: rgba(255, 255, 255, 0.12);
+            animation: cardSnowRotate 15s linear infinite reverse;
+        }
+
+        @keyframes cardSnowRotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .blessing-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow:
+                0 25px 60px rgba(135, 206, 250, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            border-color: rgba(255, 255, 255, 0.45);
+        }
+
+        .blessing-card:hover::before {
+            color: rgba(255, 255, 255, 0.35);
+            animation: cardSnowRotate 10s linear infinite;
+        }
+
+        .blessing-card:hover::after {
+            color: rgba(255, 255, 255, 0.3);
+            animation: cardSnowRotate 8s linear infinite reverse;
+        }
+
+        .card-title {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: 700;
+            text-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(135, 206, 250, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-content {
+            font-size: 1.25rem;
+            line-height: 2;
+            color: rgba(255, 255, 255, 0.95);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Message Section */
+        .message-section {
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.15) 0%,
+                    rgba(255, 255, 255, 0.08) 100%);
+            backdrop-filter: blur(30px);
+            border-radius: 40px;
+            padding: 60px 50px;
+            margin: 80px 0;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.4),
+                inset 0 2px 0 rgba(255, 255, 255, 0.4),
+                0 0 100px rgba(135, 206, 250, 0.2);
+            animation: fadeInUp 2s ease 0.8s backwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .message-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    transparent 30%,
+                    rgba(255, 255, 255, 0.05) 50%,
+                    transparent 70%);
+            animation: shimmer 8s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .message-title {
+            font-size: 3.2rem;
+            text-align: center;
+            margin-bottom: 45px;
+            color: #fff;
+            text-shadow:
+                0 0 30px rgba(255, 255, 255, 0.8),
+                0 0 60px rgba(135, 206, 250, 0.6);
+            position: relative;
+            z-index: 1;
+        }
+
+        .message-content {
+            font-size: 1.5rem;
+            line-height: 2.5;
+            color: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .message-content p {
+            margin: 30px 0;
+            animation: fadeInUp 2s ease backwards;
+        }
+
+        .message-content p:nth-child(1) {
+            animation-delay: 1s;
+        }
+
+        .message-content p:nth-child(2) {
+            animation-delay: 1.2s;
+        }
+
+        .message-content p:nth-child(3) {
+            animation-delay: 1.4s;
+        }
+
+        .message-content p:nth-child(4) {
+            animation-delay: 1.6s;
+        }
+
+        .message-content p:nth-child(5) {
+            animation-delay: 1.8s;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+            font-size: 1.1em;
+        }
+
+        /* Interactive hint */
+        .click-hint {
+            text-align: center;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin: 60px 0;
+            animation: pulse 2.5s ease-in-out infinite;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.7;
+                transform: scale(1);
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.08);
+                text-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 80px;
+            position: relative;
+            z-index: 4;
+        }
+
+        .footer-poem {
+            font-size: 1.8rem;
+            color: #e8f4f8;
+            margin-bottom: 30px;
+            line-height: 2.2;
+            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            font-style: italic;
+        }
+
+        .signature {
+            font-size: 2rem;
+            color: #ffd700;
+            font-style: italic;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+            margin-top: 40px;
+            font-weight: 600;
+        }
+
+        .date {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.75);
+            margin-top: 20px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Floating snowflakes */
+        .snowflake {
+            position: fixed;
+            color: #fff;
+            font-size: 2rem;
+            pointer-events: none;
+            z-index: 5;
+            animation: snowfall linear infinite;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+            opacity: 0.9;
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg) translateX(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(360deg) translateX(100px);
+                opacity: 0.5;
+            }
+        }
+
+        /* Large decorative snowflakes */
+        .deco-snowflake {
+            position: fixed;
+            color: rgba(255, 255, 255, 0.15);
+            font-size: 8rem;
+            pointer-events: none;
+            z-index: 1;
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Click effect */
+        .click-effect {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 3rem;
+            animation: clickPop 1.2s ease-out forwards;
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
+        }
+
+        @keyframes clickPop {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.3) rotate(180deg);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -100px) scale(1) rotate(360deg);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 3.5rem;
+                letter-spacing: 6px;
+            }
+
+            .hero-subtitle {
+                font-size: 1.6rem;
+            }
+
+            .blessing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .card-title {
+                font-size: 2rem;
+            }
+
+            .card-content {
+                font-size: 1.15rem;
+            }
+
+            .message-section {
+                padding: 40px 30px;
+            }
+
+            .message-title {
+                font-size: 2.5rem;
+            }
+
+            .message-content {
+                font-size: 1.25rem;
+                line-height: 2.2;
+            }
+        }
+
+        /* Sparkle effect */
+        .sparkle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 6;
+            animation: sparkleAnimation 2s ease-out forwards;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes sparkleAnimation {
+            0% {
+                opacity: 1;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0) translateY(-100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="winter-bg"></div>
+    <div class="frost-overlay"></div>
+    <div class="northern-lights"></div>
+    <canvas id="snowCanvas"></canvas>
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Decorative large snowflakes -->
+    <div class="deco-snowflake" style="top: 10%; left: 10%;">❄</div>
+    <div class="deco-snowflake" style="top: 20%; right: 15%; animation-duration: 25s;">❅</div>
+    <div class="deco-snowflake" style="bottom: 15%; left: 20%; animation-duration: 35s;">❆</div>
+    <div class="deco-snowflake" style="bottom: 25%; right: 10%; animation-duration: 28s;">✻</div>
+    <div class="deco-snowflake" style="top: 50%; left: 5%; animation-duration: 32s;">✼</div>
+    <div class="deco-snowflake" style="top: 60%; right: 8%; animation-duration: 27s;">❉</div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="hero-title">房思彤</h1>
+            <p class="hero-subtitle">
+                ❄️ 在新西伯利亚的冬日里<br>
+                送你最温暖的祝福，必胜，奉顺英 ✨
+
+            </p>
+        </section>
+
+        <!-- Blessing Cards -->
+        <section class="blessing-section">
+            <div class="blessing-cards">
+                <div class="blessing-card" onclick="createCelebration(event)">
+                    <h3 class="card-title">闪耀的你</h3>
+                    <p class="card-content">
+                        思彤，你就像冬日里最亮的那颗星。无论走到哪里，你都带着自己独特的光芒。
+                        慢慢来，每一步都算数。✨
+                    </p>
+                </div>
+
+                <div class="blessing-card" onclick="createCelebration(event)">
+                    <h3 class="card-title">温柔的力量</h3>
+                    <p class="card-content">
+                        学习的路上或许会有挑战，但你拥有的不仅是智慧，还有温柔而坚定的力量。
+                        相信自己，你能做到的！💖
+                    </p>
+                </div>
+
+                <div class="blessing-card" onclick="createCelebration(event)">
+                    <h3 class="card-title">美好的未来</h3>
+                    <p class="card-content">
+                        每一天的努力都像是在画一幅画，总有一天会看到完整的美丽图景。
+                        未来充满了无限可能，而你值得最好的！🎨
+                    </p>
+                </div>
+
+                <div class="blessing-card" onclick="createCelebration(event)">
+                    <h3 class="card-title">记得休息</h3>
+                    <p class="card-content">
+                        累了就歇一歇，看看窗外的雪景，喝杯热茶。
+                        照顾好自己，才能走得更远。你的健康和快乐最重要！🫖
+                    </p>
+                </div>
+
+                <div class="blessing-card" onclick="createCelebration(event)">
+                    <h3 class="card-title">享受过程</h3>
+                    <p class="card-content">
+                        学习不只是为了结果，过程本身也充满了乐趣和成长。
+                        像听音乐一样，享受每一个音符，每一个进步！🎶
+                    </p>
+                </div>
+
+                <div class="blessing-card" onclick="createCelebration(event)">
+                    <h3 class="card-title">永远支持</h3>
+                    <p class="card-content">
+                        无论何时何地，无论你遇到什么，记得有人一直在为你加油，
+                        永远相信你，永远以你为傲！🌸
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <h2 class="message-title">💌 写给思彤的话</h2>
+            <div class="message-content">
+                <p>
+                    思彤，在这个<span class="highlight">新西伯利亚般宁静的冬日</span>，
+                    我想让你知道：你不需要成为任何人期待的样子，做你自己就已经很好了。
+                </p>
+                <p>
+                    学习的道路就像雪地里的脚印，<span class="highlight">一步一步，清晰而坚定</span>。
+                    不用着急，不用焦虑，按照自己的节奏来就好。
+                </p>
+                <p>
+                    当你感到疲惫时，就抬头看看天空的雪花，它们自由而美丽地飘落，
+                    <span class="highlight">每一片都独一无二</span>，就像你一样。
+                </p>
+                <p>
+                    记住：<span class="highlight">你已经很努力了，你已经很棒了！</span>
+                    这些温暖的祝福，会像冬日的阳光，一直陪伴着你。
+                </p>
+                <p style="margin-top: 50px; font-size: 1.6rem;">
+                    <span class="highlight">思彤，加油！但也要记得善待自己 💕</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-poem">
+                ❄️ 愿你如雪花般纯净美好<br>
+                如冬日阳光般温暖明亮 ☀️<br>
+                <br>
+                每一次努力都值得被看见<br>
+                每一个梦想都值得被守护 🌟
+            </div>
+            <p class="signature">
+                — 支持你的朋友 💕<br>
+                beyond
+            </p>
+            <p class="date">寄自心底的寄语</p>
+        </footer>
+    </div>
+
+    <script>
+        // Snow Canvas
+        const snowCanvas = document.getElementById('snowCanvas');
+        const snowCtx = snowCanvas.getContext('2d');
+        snowCanvas.width = window.innerWidth;
+        snowCanvas.height = window.innerHeight;
+
+        // Fireworks Canvas
+        const fireworksCanvas = document.getElementById('fireworksCanvas');
+        const fireworksCtx = fireworksCanvas.getContext('2d');
+        fireworksCanvas.width = window.innerWidth;
+        fireworksCanvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            snowCanvas.width = window.innerWidth;
+            snowCanvas.height = window.innerHeight;
+            fireworksCanvas.width = window.innerWidth;
+            fireworksCanvas.height = window.innerHeight;
+        });
+
+        // Enhanced Snowflake Class
+        class Snowflake {
+            constructor() {
+                this.x = Math.random() * snowCanvas.width;
+                this.y = Math.random() * snowCanvas.height - snowCanvas.height;
+                this.size = Math.random() * 5 + 2;
+                this.speedY = Math.random() * 1.5 + 0.5;
+                this.speedX = Math.random() * 1 - 0.5;
+                this.opacity = Math.random() * 0.8 + 0.2;
+                this.swing = Math.random() * 0.5;
+                this.swingSpeed = Math.random() * 0.02 + 0.01;
+                this.rotation = Math.random() * 360;
+                this.rotationSpeed = Math.random() * 2 - 1;
+            }
+
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX + Math.sin(this.y * this.swingSpeed) * this.swing;
+                this.rotation += this.rotationSpeed;
+
+                if (this.y > snowCanvas.height) {
+                    this.y = -10;
+                    this.x = Math.random() * snowCanvas.width;
+                }
+
+                if (this.x > snowCanvas.width + 20) {
+                    this.x = -20;
+                } else if (this.x < -20) {
+                    this.x = snowCanvas.width + 20;
+                }
+            }
+
+            draw() {
+                snowCtx.save();
+                snowCtx.translate(this.x, this.y);
+                snowCtx.rotate(this.rotation * Math.PI / 180);
+                snowCtx.globalAlpha = this.opacity;
+                snowCtx.fillStyle = '#ffffff';
+                snowCtx.shadowBlur = 15;
+                snowCtx.shadowColor = 'rgba(255, 255, 255, 0.9)';
+
+                // Draw detailed six-pointed snowflake
+                snowCtx.beginPath();
+                for (let i = 0; i < 6; i++) {
+                    const angle = (Math.PI / 3) * i;
+                    const x1 = Math.cos(angle) * this.size;
+                    const y1 = Math.sin(angle) * this.size;
+
+                    snowCtx.moveTo(0, 0);
+                    snowCtx.lineTo(x1, y1);
+
+                    // Add branches
+                    const branchAngle1 = angle - Math.PI / 6;
+                    const branchAngle2 = angle + Math.PI / 6;
+                    const branchLength = this.size * 0.5;
+
+                    snowCtx.moveTo(x1 * 0.6, y1 * 0.6);
+                    snowCtx.lineTo(
+                        x1 * 0.6 + Math.cos(branchAngle1) * branchLength * 0.3,
+                        y1 * 0.6 + Math.sin(branchAngle1) * branchLength * 0.3
+                    );
+
+                    snowCtx.moveTo(x1 * 0.6, y1 * 0.6);
+                    snowCtx.lineTo(
+                        x1 * 0.6 + Math.cos(branchAngle2) * branchLength * 0.3,
+                        y1 * 0.6 + Math.sin(branchAngle2) * branchLength * 0.3
+                    );
+                }
+
+                snowCtx.strokeStyle = '#ffffff';
+                snowCtx.lineWidth = 1.5;
+                snowCtx.stroke();
+
+                // Center crystal
+                snowCtx.beginPath();
+                snowCtx.arc(0, 0, this.size * 0.25, 0, Math.PI * 2);
+                snowCtx.fill();
+
+                snowCtx.restore();
+            }
+        }
+
+        // Create more snowflakes for denser effect
+        const snowflakes = [];
+        for (let i = 0; i < 150; i++) {
+            snowflakes.push(new Snowflake());
+        }
+
+        // Firework Particle Class
+        class FireworkParticle {
+            constructor(x, y, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 8 + 3;
+                this.velocityX = Math.cos(angle) * speed;
+                this.velocityY = Math.sin(angle) * speed;
+                this.alpha = 1;
+                this.decay = Math.random() * 0.02 + 0.01;
+                this.size = Math.random() * 4 + 2;
+                this.gravity = 0.15;
+            }
+
+            update() {
+                this.velocityX *= 0.98;
+                this.velocityY *= 0.98;
+                this.velocityY += this.gravity;
+                this.x += this.velocityX;
+                this.y += this.velocityY;
+                this.alpha -= this.decay;
+            }
+
+            draw() {
+                fireworksCtx.save();
+                fireworksCtx.globalAlpha = this.alpha;
+                fireworksCtx.fillStyle = this.color;
+                fireworksCtx.shadowBlur = 20;
+                fireworksCtx.shadowColor = this.color;
+                fireworksCtx.beginPath();
+                fireworksCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                fireworksCtx.fill();
+                fireworksCtx.restore();
+            }
+        }
+
+        let fireworkParticles = [];
+
+        // Animation loop
+        function animate() {
+            // Clear canvases
+            snowCtx.clearRect(0, 0, snowCanvas.width, snowCanvas.height);
+            fireworksCtx.fillStyle = 'rgba(26, 35, 50, 0.08)';
+            fireworksCtx.fillRect(0, 0, fireworksCanvas.width, fireworksCanvas.height);
+
+            // Update and draw snowflakes
+            snowflakes.forEach(snowflake => {
+                snowflake.update();
+                snowflake.draw();
+            });
+
+            // Update and draw firework particles
+            fireworkParticles = fireworkParticles.filter(particle => particle.alpha > 0);
+            fireworkParticles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Create firework explosion
+        function createFirework(x, y) {
+            const colors = [
+                '#ff6b9d', '#c44569', '#f8b500', '#feca57',
+                '#48dbfb', '#0abde3', '#ff9ff3', '#54a0ff',
+                '#fff', '#ffd700', '#ff69b4', '#87ceeb',
+                '#98d8c8', '#6c5ce7', '#a29bfe', '#fd79a8'
+            ];
+
+            const particleCount = 80;
+            for (let i = 0; i < particleCount; i++) {
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                fireworkParticles.push(new FireworkParticle(x, y, color));
+            }
+
+            // Add extra sparkles
+            for (let i = 0; i < 30; i++) {
+                fireworkParticles.push(new FireworkParticle(x, y, '#ffffff'));
+            }
+        }
+
+        // Click event handler
+        document.addEventListener('click', (e) => {
+            createFirework(e.clientX, e.clientY);
+            createClickEffect(e.clientX, e.clientY);
+            createSparkles(e.clientX, e.clientY);
+        });
+
+        // Card click celebration
+        function createCelebration(event) {
+            event.stopPropagation();
+            const rect = event.currentTarget.getBoundingClientRect();
+            const x = rect.left + rect.width / 2;
+            const y = rect.top + rect.height / 2;
+
+            // Create multiple fireworks
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => {
+                    createFirework(
+                        x + (Math.random() - 0.5) * 100,
+                        y + (Math.random() - 0.5) * 100
+                    );
+                }, i * 100);
+            }
+
+            // Add floating hearts
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    createFloatingHeart(x, y);
+                }, i * 150);
+            }
+        }
+
+        // Create click effect
+        function createClickEffect(x, y) {
+            const effects = ['✨', '💫', '⭐', '🌟', '❄️', '💖', '🎆', '✦', '❅', '❆', '💝', '🌠'];
+
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => {
+                    const effect = effects[Math.floor(Math.random() * effects.length)];
+                    const el = document.createElement('div');
+                    el.className = 'click-effect';
+                    el.textContent = effect;
+                    el.style.left = x + (Math.random() - 0.5) * 50 + 'px';
+                    el.style.top = y + (Math.random() - 0.5) * 50 + 'px';
+                    document.body.appendChild(el);
+
+                    setTimeout(() => el.remove(), 1200);
+                }, i * 150);
+            }
+        }
+
+        // Create sparkles
+        function createSparkles(x, y) {
+            for (let i = 0; i < 12; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                const angle = (Math.PI * 2 * i) / 12;
+                const distance = 50 + Math.random() * 30;
+                sparkle.style.left = x + Math.cos(angle) * distance + 'px';
+                sparkle.style.top = y + Math.sin(angle) * distance + 'px';
+                sparkle.style.animationDelay = (i * 0.05) + 's';
+                document.body.appendChild(sparkle);
+
+                setTimeout(() => sparkle.remove(), 2000);
+            }
+        }
+
+        // Floating heart effect
+        function createFloatingHeart(x, y) {
+            const hearts = ['💕', '💖', '💗', '💝', '💓', '💞', '💘', '❤️'];
+            const heart = hearts[Math.floor(Math.random() * hearts.length)];
+
+            const el = document.createElement('div');
+            el.textContent = heart;
+            el.style.position = 'fixed';
+            el.style.left = x + 'px';
+            el.style.top = y + 'px';
+            el.style.fontSize = '2.5rem';
+            el.style.pointerEvents = 'none';
+            el.style.zIndex = '10000';
+            el.style.filter = 'drop-shadow(0 0 15px rgba(255, 105, 180, 0.9))';
+            el.style.animation = 'heartFloat 3s ease-out forwards';
+            document.body.appendChild(el);
+
+            setTimeout(() => el.remove(), 3000);
+        }
+
+        // Add heart float animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes heartFloat {
+                0% {
+                    opacity: 1;
+                    transform: translateY(0) scale(0.5) rotate(0deg);
+                }
+                50% {
+                    transform: translateY(-120px) scale(1.3) rotate(180deg);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(-250px) scale(0.8) rotate(360deg);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Random automatic fireworks (more frequent)
+        setInterval(() => {
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight * 0.7;
+            createFirework(x, y);
+        }, 4000);
+
+        // Create continuous HTML snowflakes (increased frequency)
+        setInterval(() => {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.textContent = ['❄', '❅', '❆', '✻', '✼', '❉'][Math.floor(Math.random() * 6)];
+            snowflake.style.left = Math.random() * 100 + '%';
+            snowflake.style.animationDuration = (Math.random() * 5 + 8) + 's';
+            snowflake.style.fontSize = (Math.random() * 1.5 + 1) + 'rem';
+            snowflake.style.opacity = Math.random() * 0.5 + 0.5;
+            document.body.appendChild(snowflake);
+
+            setTimeout(() => snowflake.remove(), 13000);
+        }, 150);
+
+        // Welcome fireworks show
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                for (let i = 0; i < 8; i++) {
+                    setTimeout(() => {
+                        const x = window.innerWidth * (0.15 + Math.random() * 0.7);
+                        const y = window.innerHeight * (0.2 + Math.random() * 0.5);
+                        createFirework(x, y);
+
+                        if (i % 2 === 0) {
+                            createFloatingHeart(x, y);
+                        }
+                    }, i * 400);
+                }
+            }, 1000);
+        });
+
+        // Occasional random hearts
+        setInterval(() => {
+            const x = Math.random() * window.innerWidth;
+            const y = window.innerHeight * 0.8;
+            createFloatingHeart(x, y);
+        }, 8000);
+    </script>
+</body>
+
+</html>
